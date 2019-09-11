@@ -15,12 +15,12 @@ int fact(int n) {
 
 
 
-double term1(int n) {
+double mult1(int n) {
     double numerator = 2;
     return numerator/fact(n+1);
 }
 
-double term2(int n) {
+double mult2(int n) {
 
     double intermediate, denominator = 2;
     intermediate = M_LN2 / denominator;
@@ -33,8 +33,8 @@ int main() {
     double piece1, piece2;
     
     for (int i = 1; i < 16; i++) {
-        piece1 = term1(i);
-        piece2 = term2(i);
+        piece1 = mult1(i);
+        piece2 = mult2(i);
         printf("Piece1: %.10f, \npiece2: %.10f\n", piece1, piece2);
         printf("%d : %.10f\n", i, piece1 * piece2);
     }     
