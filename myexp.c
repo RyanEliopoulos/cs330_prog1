@@ -1,3 +1,7 @@
+// The smallest n such that the relative error is guaranteed to be 
+// below machine epsilon for floats (1.19209 X 10^-7) is 7
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
