@@ -35,7 +35,7 @@ int main() {
     for (int i = 1; i < 16; i++) {
         piece1 = mult1(i);
         piece2 = mult2(i);
-        printf("Piece1: %.10f, \npiece2: %.10f\n", piece1, piece2);
+        //printf("Piece1: %.10f, \npiece2: %.10f\n", piece1, piece2);
         printf("%d : %.10f\n", i, piece1 * piece2);
     }     
     return 0;
