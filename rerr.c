@@ -16,15 +16,19 @@ int fact(int n) {
 
 
 double mult1(int n) {
-    double numerator = 2;
-    return numerator/fact(n+1);
+    double numerator = 1;
+    double result = numerator / fact(n+1);
+    printf("result in mult1 is: %f\n", result);
+    return result;
 }
 
 double mult2(int n) {
 
     double intermediate, denominator = 2;
     intermediate = M_LN2 / denominator;
-    return pow(intermediate, n+1);
+    double result = pow(intermediate, n+1);
+    printf("result in mult2: %f\n", result);
+    return result;
 
 }
 
